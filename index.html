@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    <title>Świat Telefonów</title>
-  .dropdown-list {
-    list-style: none;
-    padding: 0;
-    display: none;
-  }
-
-  .dropdown-list li {
-    margin: 5px 0;
-  }
-
-  .dropdown-list a {
-    text-decoration: none;
-    color: #333;
-  }
-
-  #toggle-button {
-    cursor: pointer;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="author" content="Twoje Nazwisko">
+    <title>Świat Telefonów - Hurtownia</title>
+    <style>
+        .page-divider {
+            border-top: 2px solid red;
+            width: 100%;
+        }
+        
+        h1 {
+            color: red;
+            text-align: center;
+            font-style: italic;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-family: Arial, sans-serif;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        ul {
+            list-style-type: square;
+        }
+        
+        #logo {
+            width: 700px;
+            height: 200px;
+            border: 6px solid yellow;
+        }
+    </style>
 </head>
 <body>
-    
-     
-                 <h3 style="color: black;">ŚWIAT TELEFONÓW</h3>
-               <IMG SCR="swiat telefonów.JPG" ALT="SWIAT TELEFONÓW" WIDTH="300" HEIGHT="300">"
-  <button id="toggle-button"><font face="Times New Roman"><h2>Marki dostępne w naszym sklepie</h2></font></button>
-  <ul class="dropdown-list">
-    <li><a href="Samsung.html"><h3>Samsung</h3></a></li>
-    <li><a href="Apple.html"><h3>Apple</h3></a></li>
-    <li><a href="Nokia.html"><h3>Nokia</h3></a></li>
-    <li><a href="Xiaomi.html"><h3>Xiaomi</h3></a></li>
-    <li><a href="Huawei.html"><h3>Huawei</h3></a></li>
-    <li><a href="Motorola.html"><h3>Motorola</h3></a></li>
-  </ul>
-  <script>
-    var dropdownList = document.querySelector('.dropdown-list');
-    var toggleButton = document.querySelector('#toggle-button');
-    var isListVisible = false;
-
-    toggleButton.addEventListener('click', function() {
-      if (isListVisible) {
-        dropdownList.style.display = 'none';
-      } else {
-        dropdownList.style.display = 'block';
-      }
-      isListVisible = !isListVisible;
-    });
-  </script>
+    <div class="page-divider"></div>
+    <div class="page-divider" style="border-top: 3px solid green;"></div>
+    <div class="page-divider" style="border-top: 4px solid blue;"></div>
+    <h1>© Twoje Nazwisko</h1>
+    <h1>Świat Telefonów - Hurtownia</h1>
+    <p>
+        Nasza hurtownia oferuje szeroki wybór telefonów komórkowych i akcesoriów. Oferujemy produkty w atrakcyjnych cenach. Nasze atuty:
+    </p>
+    <ul>
+        <li>Najwyższa jakość</li>
+        <li>Szybka dostawa</li>
+        <li>Konkurencyjne ceny</li>
+        <li>Profesjonalna obsługa</li>
+        <li>Bogaty wybór modeli</li>
+    </ul>
+    <img id="logo" src="logo_nazwisko.jpg" alt="Logo Hurtowni" />
 </body>
 </html>
