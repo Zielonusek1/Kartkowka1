@@ -42,20 +42,14 @@
         body {
             background-color: lightblue;
         }
-        body {
-  background-image: url(oblewane.jpeg); /* lub background-image: url('adres_URL_obrazu'); */
-  background-size: cover; /* dostosowanie obrazu do rozmiaru okna przeglądarki */
-  background-repeat: no-repeat; /* brak powtarzania obrazu */
-  background-attachment: fixed; /* opcjonalne: ustawienie tła jako nieruchome */
-}
-
-.text {
-  background-clip: text; /* Ustawia clip tła tekstu */
-  text-fill-color: transparent; /* Kolor tekstu staje się transparentny */
-  /* lub alternatywnie */
-  /* background-clip: text; */
-  /* color: transparent; */
-}
+        .background-container {
+      background-image: url('ścieżka/do/obrazu.jpg'); /* lub background-image: url('adres_URL_obrazu'); */
+      background-size: cover; /* dostosowanie obrazu do rozmiaru kontenera */
+      background-repeat: no-repeat; /* brak powtarzania obrazu */
+      background-attachment: fixed; /* opcjonalne: ustawienie tła jako nieruchome */
+      width: 100%; /* szerokość kontenera */
+      height: 400px; /* wysokość kontenera */
+    }
 
     </style>
 </head>
